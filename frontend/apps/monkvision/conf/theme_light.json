@@ -63,21 +63,29 @@
     
     "main_css": {
         "*": "@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap');",
-        "body": "background-color: rgb(245, 247, 250); font-family: 'Raleway';",
-        "div#container": "background-color: rgb(245, 247, 250); border-top-left-radius: 20px; left: 80px; width: calc(100% - 64px);",
-        "div#maincontent": "top: 95px; width: calc(95vw - 60px); height: calc(100vh - 95px); left: 30px;",
-        "div#leftheader": "background-color: #202525; padding-top: 40px;",
-        "div#leftheader > img.dashicon": "height: 48px; width: 48px; left: 10px; padding: 2px;",
-        "div#leftheader > img.dashicon:hover": "left: 10px; padding: 2px; border-radius: 5px; border-width: 0.5px; border-style: outset; border-color: white;",
-        "div#leftheader > img.dashicon.selected": "left: 10px; padding: 2px; border-style: inset; border-radius: 5px; border-width: 0.5px; border-color: white;",
-        "div#leftheader > span": "color: white; padding-bottom: 30px; width: 64px; left: 3px; font-size: smaller; font-weight: 500;",
-        "span#header": "top: 15px; left: 20px; color: #41cf70; width: calc(100% - 30px); font-family: 'Raleway';",
+        "body": "font-family: 'Raleway';",
+        "div#container": "background-color: rgb(245, 247, 250); margin-left: 58px; width: calc(100vw - 58px); padding: 1em 0.5em 1em 1em;",
+        "div#maincontent": "width: 100%; height: 100%;",
+        "div#leftheader": "background-color: #202525; padding-top: 40px; width: 58px;background:linear-gradient(180deg,rgba(13,17,23,0.98),rgba(11,15,20,0.96));border-right:1px solid rgba(255,255,255,0.06);box-shadow:2px 0 16px rgba(0,0,0,0.25);backdrop-filter:blur(12px);padding-top:10px;",
+        "div#leftheader > .dash-row > img.dashicon:hover": "border-radius: 5px; border-width: 0.5px; border-style: outset; border-color: white;",
+        "div#leftheader > .dash-row > img.dashicon.selected": "border-style: inset; border-radius: 5px; border-width: 0.5px; border-color: white;",
+        "div#leftheader > .dash-row > span.dashtitle": "color: white; font-size: 14px; font-weight: 500;",
+        "div#leftheader:hover": "width: 190px;",
+        "div#leftheader .dash-row:hover": "background:rgba(59,130,246,0.08);box-shadow:0 0 10px rgba(59,130,246,0.35);",
+        "div#leftheader .dash-row:hover::before": "content:'';position:absolute;left:0;top:8px;bottom:8px;width:3px;border-radius:2px;background:#3b82f6;box-shadow:0 0 6px rgba(59,130,246,0.6);",
+        "div#leftheader .dash-row .dashicon.selected": "filter:brightness(1.1) drop-shadow(0 0 6px rgba(59,130,246,0.6));",
+        "span#header": "color: #41cf70; font-family: 'Raleway';",
+        "div#leftheader .dash-row": "height:46px;padding:0 10px;gap:12px;margin:4px 0;border-radius:8px;transition:background 0.2s ease,box-shadow 0.2s ease;",
+        "div#leftheader .dash-row .dashicon": "height:28px;width:28px;",
+        "div#leftheader .dash-row .dashtitle": "color:#1f2937;font-size:14px;font-weight:500;",
         "span#header > img#textlogo": "height: 12px; width: 100px;",
+        "div#leftheader:not(:hover) .dash-row": "justify-content: flex-start; padding-left: 15px; padding-right: 0; gap: 0;",
         "span#header > span#signoff": "margin-right: 20px;",
         "span#header > span#signoff > img": "height: 30px; width: 30px;",
         "span#header > span#title": "width: 300px; font-size: 0.85em; font-weight: bold; background-color: white; box-shadow: 0 0 1px rgba(34, 25, 25, 0.4); border-radius: 5px; padding: 5px; color: rgba(0,0,0,0.75);",
         "input#datetimepickerfrom, input#datetimepickerfrom:active, input#datetimepickerto, input#datetimepickerto:active, #timepicker":
-            "font-size: 0.8em; font-family: sans-serif; color: rgba(0,0,0,0.75);border-radius: 4px; box-shadow: 0 0 1px rgba(34, 25, 25, 0.4); padding: 2px; border-style: none;"
+            "font-size: 0.8em; font-family: sans-serif; color: rgba(0,0,0,0.75);border-radius: 4px; box-shadow: 0 0 1px rgba(34, 25, 25, 0.4); padding: 2px; border-style: none;",
+        "span#header > img#playpause": "height: 30px; width: 30px;"
     },
     "main_i18n": {
         "en": {
